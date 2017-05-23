@@ -76,17 +76,17 @@ h2#aboutmetag {
 
 p#p1, p#p2 {
 	line-height: 25px;
-	font-size: 28px;
+	font-size: 18px;
 }
 
-.clearfix:after {
+/*.clearfix:after {
     clear: both;
     content: ".";
     display: block;
     height: 0;
     line-height: 0;
     visibility: hidden;
-}
+}*/
 
 
 /*aside section*/
@@ -104,11 +104,13 @@ div#asideid {
 	box-sizing: border-box;
 	border: thin solid lightgray;
 	background-color: #f8f8f8;
-	padding: 25px 10px 10px 10px;
+	padding-top: 25px;
+	padding: auto;
 	height: 200px;
 	margin-top: 50px;
-	margin-bottom: 559px;
+	margin-bottom: 1000px;
 	border-radius: 5px;
+
 
 }
 
@@ -150,7 +152,7 @@ div#colorband {
 }
 
 footer { 
-    position: fixed; 
+    position: absolute; 
     left: 0 ; 
     right: 0; 
     bottom: 0; 
