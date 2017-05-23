@@ -8,15 +8,13 @@ body {
     overflow: auto;
     min-height:100%; 
     position:relative; 
-    padding-bottom:[footer-height];
 }
-
 
 
     
 
 h1,h2,h3 {
-	font-family: 'Georgia';
+	font-family: 'Josefin Slab', serif;
 	color: #55bbf4;
 	font-weight: bold;
 }
@@ -24,24 +22,26 @@ h1,h2,h3 {
 
 /*header*/
 
-a.navbar-brand {
 
-	padding-left: 140px;
-	height: 100px;
 
+.navbar-header {
+    text-align: center;
+    width: 100%;
+    border-bottom: thin solid lightgray;
+    margin-bottom: 5px;
 }
 
-ul.nav.navbar-nav.navbar-right {
-	margin-top: 30px;
-	padding-right: 250px;
+.navbar-header h1 {
+	font-size: 60px;
 }
 
+.navbar-brand {float:none;}
 
-/*li.active {
-
-	padding-right: 250px;
+.center-pills {
+    display: flex;
+    justify-content: center;
 }
-*/
+
 
 
 /*about section*/
@@ -55,7 +55,6 @@ section.about {
 	padding: 25px 35px 25px 35px;
 	border: thin solid lightgray;
 	border-radius: 5px;
-	font-size: 50px;
 }
 
 h2#aboutmetag {
@@ -71,6 +70,8 @@ h2#aboutmetag {
 #me {
 
 	float: left;
+	width: 300px;
+	height: 300px;
 	margin: 0 10px 10px 0px;
 }
 
@@ -79,14 +80,14 @@ p#p1, p#p2 {
 	font-size: 18px;
 }
 
-/*.clearfix:after {
+.clearfix:after {
     clear: both;
     content: ".";
     display: block;
     height: 0;
     line-height: 0;
     visibility: hidden;
-}*/
+}
 
 
 /*aside section*/
@@ -119,7 +120,7 @@ h3#aside {
 	text-align: center;
 	color: #55bbf4;
 	font-size: 23px;
-	font-family: 'Georgia';
+	font-family: 'Josefin Slab', serif;
 	font-weight: bold;
 	padding-bottom: 5px;
 	border-bottom: 1px solid lightgray;
@@ -129,12 +130,10 @@ h3#aside {
 
 div#mediaimgs.col-lg-12 {
 
-	display: block;
 	margin: auto;
     width: 100%;
-    padding-left: 35px;
-    padding-top: 25px;
-
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -152,7 +151,7 @@ div#colorband {
 }
 
 footer { 
-    position: absolute; 
+    position: fixed; 
     left: 0 ; 
     right: 0; 
     bottom: 0; 
